@@ -26,12 +26,27 @@ console.log(dataCapodanno)
 
 /* funzioni */
 
-function updateSecondToFinalDate (finalDate){
+function updateSecondToFinalDate (finalDate,d,h,m,s){
     let dataDiOggi = new Date()
+    console.log(dataDiOggi)
     
-    let secondsRemaining = Math.floort(Math.abs(finalDate - dataDiOggi) / (1000))
+    let secondsRemaining = Math.floor(Math.abs(finalDate - dataDiOggi) / 1000)
 
-    return console.log(secondsRemaining)
+    let days = Math.floor(secondsRemaining / (60 * 60 * 24)) + 1
+    let hours = Math.floor((secondsRemaining / (60 * 60) % 24)) + 1
+    let minute = Math.floor(((secondsRemaining / 60) % 60)) + 1
+    let second = Math.floor((secondsRemaining % 60) + 1)
+
+    console.log(`secondi rimanenti: ${secondsRemaining}`)
+    console.log(days)
+    console.log(hours)
+    console.log(minute)
+    console.log(second)
+
+    d.innerHTML = days
+    h.innerHTML = hours
+    m.innerHTML = minute
+    s.innerHTML = second
 }
 
 updateSecondToFinalDate(dataCapodanno);
