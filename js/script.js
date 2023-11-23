@@ -12,14 +12,13 @@ const elOre = document.getElementById('ore')
 const elMinuti = document.getElementById('minuti')
 const elSecondi = document.getElementById('secondi')
 
-
 let dataDiOggi = new Date()
-let dataCapodanno = new Date()
 
+let dataCapodanno = new Date()
 dataCapodanno.setFullYear(2023, 11, 31)
-dataCapodanno.setHours(00)
-dataCapodanno.setMinutes(00)
-dataCapodanno.setSeconds(00)
+dataCapodanno.setHours(0)
+dataCapodanno.setMinutes(0)
+dataCapodanno.setSeconds(0)
 
 let difference = Math.abs(dataCapodanno - dataDiOggi)
 
