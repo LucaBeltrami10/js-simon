@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timer-container{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer-container p {
+    font-size: 3rem;
+    font-weight: 800;
+    
+}
