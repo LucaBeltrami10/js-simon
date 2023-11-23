@@ -12,7 +12,7 @@ const elOre = document.getElementById('ore')
 const elMinuti = document.getElementById('minuti')
 const elSecondi = document.getElementById('secondi')
 
-let dataDiOggi = new Date()
+
 
 let dataCapodanno = new Date()
 dataCapodanno.setFullYear(2023, 11, 31)
@@ -20,12 +20,18 @@ dataCapodanno.setHours(0)
 dataCapodanno.setMinutes(0)
 dataCapodanno.setSeconds(0)
 
-let difference = Math.abs(dataCapodanno - dataDiOggi)
 
-let secondsRemaining = difference / (1000)
-
-console.log(dataDiOggi)
 console.log(dataCapodanno)
-console.log(secondsRemaining, typeof secondsRemaining)
 
-typeof secondsRemaining
+
+/* funzioni */
+
+function updateSecondToFinalDate (finalDate){
+    let dataDiOggi = new Date()
+    
+    let secondsRemaining = Math.floort(Math.abs(finalDate - dataDiOggi) / (1000))
+
+    return console.log(secondsRemaining)
+}
+
+updateSecondToFinalDate(dataCapodanno);
