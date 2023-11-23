@@ -11,14 +11,14 @@
 let dataDiOggi = new Date()
 let dataCapodanno = new Date()
 
-dataCapodanno.setFullYear(2022, 12, 31)
+dataCapodanno.setFullYear(2023, 11, 31)
 dataCapodanno.setHours(00)
 dataCapodanno.setMinutes(00)
 dataCapodanno.setSeconds(00)
 
-let difference = Math.abs(dataDiOggi - dataCapodanno)
+let difference = Math.abs(dataCapodanno - dataDiOggi)
 
-let secondsRemaining = difference / 1000
+let secondsRemaining = difference / (1000)
 
 console.log(dataDiOggi)
 console.log(dataCapodanno)
