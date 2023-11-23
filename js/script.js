@@ -7,6 +7,11 @@
  * imposto timer 
  * 
  */
+const elGiorni = document.getElementById('giorni')
+const elOre = document.getElementById('ore')
+const elMinuti = document.getElementById('minuti')
+const elSecondi = document.getElementById('secondi')
+
 
 let dataDiOggi = new Date()
 let dataCapodanno = new Date()
