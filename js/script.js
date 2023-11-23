@@ -7,11 +7,10 @@
  * imposto timer 
  * 
  */
-const elGiorni = document.getElementById('giorni')
-const elOre = document.getElementById('ore')
-const elMinuti = document.getElementById('minuti')
-const elSecondi = document.getElementById('secondi')
-
+const elDays = document.getElementById('giorni')
+const elHours = document.getElementById('ore')
+const elMinute = document.getElementById('minuti')
+const elSecond = document.getElementById('secondi')
 
 
 let dataCapodanno = new Date()
@@ -20,8 +19,11 @@ dataCapodanno.setHours(0)
 dataCapodanno.setMinutes(0)
 dataCapodanno.setSeconds(0)
 
-
 console.log(dataCapodanno)
+
+setInterval(updateSecondToFinalDate, 1000, elDays, elHours, elMinute, elSecond)
+
+
 
 
 /* funzioni */
@@ -43,10 +45,8 @@ function updateSecondToFinalDate (finalDate,d,h,m,s){
     console.log(minute)
     console.log(second)
 
-    d.innerHTML = days
+    /* d.innerHTML = days
     h.innerHTML = hours
     m.innerHTML = minute
-    s.innerHTML = second
+    s.innerHTML = second */
 }
-
-updateSecondToFinalDate(dataCapodanno);
