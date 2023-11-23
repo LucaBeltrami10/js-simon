@@ -21,7 +21,7 @@ dataCapodanno.setSeconds(0)
 
 console.log(dataCapodanno)
 
-setInterval(updateSecondToFinalDate, 1000, elDays, elHours, elMinute, elSecond)
+setInterval(updateSecondToFinalDate, 1000,dataCapodanno, elDays, elHours, elMinute, elSecond)
 
 
 
@@ -45,8 +45,8 @@ function updateSecondToFinalDate (finalDate,d,h,m,s){
     console.log(minute)
     console.log(second)
 
-    /* d.innerHTML = days
+    d.innerHTML = days
     h.innerHTML = hours
     m.innerHTML = minute
-    s.innerHTML = second */
+    s.innerHTML = second
 }
